@@ -1,6 +1,6 @@
 {
   "name": "astro-better-admonitions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extensible admonition (callout) and inline badge components for Astro",
   "type": "module",
   "exports": {

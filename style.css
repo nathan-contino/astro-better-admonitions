@@ -4,8 +4,12 @@
   Import this in your project root layout to enable admonition and badge styles.
   No external dependencies -- no Tailwind, no framework.
 
-  Dark mode: supports both @media (prefers-color-scheme: dark) and a .dark
-  ancestor class (e.g. Tailwind's darkMode: 'class').
+  Dark mode: uses a .dark ancestor class (e.g. Tailwind's darkMode: 'class').
+  If you need automatic OS-based dark mode without a class toggle, add to your
+  project CSS:
+    @media (prefers-color-scheme: dark) {
+      html { /* re-declare the .dark rules below here */ }
+    }
 
   All colors are driven by --admonition-color, set inline by the component.
 */
@@ -20,12 +24,6 @@
   margin-bottom: 1.25rem;
   border-radius: 2px;
   background-color: color-mix(in srgb, var(--admonition-color, #3b82f6) 7%, white);
-}
-
-@media (prefers-color-scheme: dark) {
-  .admonition {
-    background-color: color-mix(in srgb, var(--admonition-color, #3b82f6) 20%, #0f172a);
-  }
 }
 
 .dark .admonition {
@@ -52,12 +50,6 @@
   fill: #1e293b;
 }
 
-@media (prefers-color-scheme: dark) {
-  .admonition-icon svg path {
-    fill: #e2e8f0;
-  }
-}
-
 .dark .admonition-icon svg path {
   fill: #e2e8f0;
 }
@@ -79,13 +71,6 @@
   border-radius: 4px;
   border: 1px solid color-mix(in srgb, var(--admonition-color, #3b82f6) 40%, transparent);
   color: var(--admonition-color, #3b82f6);
-}
-
-@media (prefers-color-scheme: dark) {
-  .admonition-badge {
-    color: color-mix(in srgb, var(--admonition-color, #3b82f6) 80%, white);
-    border-color: color-mix(in srgb, var(--admonition-color, #3b82f6) 50%, transparent);
-  }
 }
 
 .dark .admonition-badge {
