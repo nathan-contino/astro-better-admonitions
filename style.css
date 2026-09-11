@@ -20,7 +20,7 @@
   padding: 1rem;
   margin-bottom: 1.25rem;
   border-radius: 2px;
-  background-color: color-mix(in srgb, var(--admonition-color, #3b82f6) 7%, white);
+  background-color: color-mix(in srgb, var(--admonition-color, #3b82f6) 10%, white);
 }
 
 .dark .admonition {
@@ -30,6 +30,11 @@
 .admonition-title {
   display: flex;
   align-items: center;
+  color: var(--admonition-color, #3b82f6);
+}
+
+.dark .admonition-title {
+  color: color-mix(in srgb, var(--admonition-color, #3b82f6) 70%, white);
 }
 
 .admonition-title-bold {
@@ -43,11 +48,11 @@
 }
 
 .admonition-icon svg path {
-  fill: #1e293b;
+  fill: var(--admonition-color, #3b82f6);
 }
 
 .dark .admonition-icon svg path {
-  fill: #e2e8f0;
+  fill: color-mix(in srgb, var(--admonition-color, #3b82f6) 70%, white);
 }
 
 .admonition-content > p:first-child { margin-top: 0; }
