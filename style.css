@@ -29,7 +29,7 @@
 
 .admonition-title {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .admonition-title-bold {
@@ -40,7 +40,6 @@
 .admonition-icon {
   flex-shrink: 0;
   margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .admonition-icon svg path {
