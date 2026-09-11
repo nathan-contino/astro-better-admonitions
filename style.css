@@ -5,11 +5,8 @@
   No external dependencies -- no Tailwind, no framework.
 
   Dark mode: uses a .dark ancestor class (e.g. Tailwind's darkMode: 'class').
-  If you need automatic OS-based dark mode without a class toggle, add to your
-  project CSS:
-    @media (prefers-color-scheme: dark) {
-      html { /* re-declare the .dark rules below here */ }
-    }
+  To also support OS dark mode, add a prefers-color-scheme media query in your
+  project CSS that re-declares the .dark rules below, or sets the .dark class.
 
   All colors are driven by --admonition-color, set inline by the component.
 */
