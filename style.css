@@ -18,6 +18,7 @@
 .admonition {
   border-left: 4px solid var(--admonition-color, #3b82f6);
   padding: 1rem;
+  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   border-radius: 2px;
   background-color: color-mix(in srgb, var(--admonition-color, #3b82f6) 10%, white);
