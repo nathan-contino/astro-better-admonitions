@@ -16,7 +16,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/better-static-sites/better-static-sites.github.io.git",
-    "directory": "astro-better-admonitions"
+    "directory": "lib/admonitions"
   },
   "homepage": "https://better-static-sites.github.io",
   "bugs": {
